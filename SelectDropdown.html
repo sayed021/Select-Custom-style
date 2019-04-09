@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body {
+  background: #fff;
+}
+.custom-select {
+  width: 250px;
+  display: block;
+  position: relative;
+  border-radius: 5px;
+  cursor: pointer;
+   color: #fff;
+  background-color: #337ab7;
+}
+.custom-select select {
+  border: none;
+  outline: none;
+  appearance: none;
+  border-radius: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  padding: 12px 55px 15px 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  color: #fff;
+  background: transparent;
+}
+
+.custom-select select option {
+  line-height: 20px;
+  padding: 10px;
+  color: #000;
+  cursor: pointer;
+}
+.custom-select:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  line-height: 38px;
+  content: "\25bc";
+  text-align: center;
+  color: #fff;
+  background-color: #337ab7;
+  font-size: 15px;
+  z-index: 1;
+  border-radius: 0 5px 
+}
+
+
+  </style>
+</head>
+<body>
+  <label class="custom-select" for="styledSelect1">
+  <select id="styledSelect1" name="options">
+      <option value=""> Select an option </option>
+      <option value="1"> Option 1 </option>
+      <option value="2"> Option 2 </option>
+      <option value="3"> Option 3 </option>
+      <option value="4"> Option 4 </option>
+    </select>
+  </label>
+  
+</body>
+</html>
